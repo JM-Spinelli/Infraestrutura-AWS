@@ -113,5 +113,5 @@ Agora, por meio de serviço como ECS (Cluster), ECR (Repositorio de imagens), RD
 
 
 
-
+7769303854:AAF_MeqcDHNvIU9szCTfhVFEA3W94b0tGSw
 ERROR - Erro ao enviar alerta Telegram: {"ok":false,"error_code":401,"description":"Unauthorized"}
