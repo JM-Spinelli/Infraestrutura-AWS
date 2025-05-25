@@ -101,8 +101,8 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 3 - Rodando a Api novamente
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-up-novamente.png)
 
-4 - Api disponível para acesso através do Ip da EC2 na porta 3001([API](http://18.215.170.211:3001))
-![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-novo-ip.png)
+4 - Api armazenando dados e disponível para acesso através do Ip da EC2 na porta 3001
+![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/BIA.png)
 
 <h1 align="center">Infraestrutura Com Resiliência Aplicada</h1>
 <!--<div align="center">--!>
