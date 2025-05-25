@@ -109,9 +109,3 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 Agora, por meio de serviço como ECS (Cluster), ECR (Repositorio de imagens), RDS (Serviço de Bancos na AWS), ALB e Target Group (Aplication Load Balancer) e EC2 (Maquinas da AWS), teremos uma infraestrutura resiliente para sustentae nossa API BIA.<br><br>
 
 
-
-
-
-7769303854:AAF_MeqcDHNvIU9szCTfhVFEA3W94b0tGSw <br><br>
-
-ERROR - Erro ao enviar alerta Telegram: {"ok":false,"error_code":401,"description":"Unauthorized"}
