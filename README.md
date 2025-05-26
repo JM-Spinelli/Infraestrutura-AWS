@@ -43,10 +43,8 @@ Objetivo: Criar uma infraestrutura altamentente resiliente e atuomatizada Utiliz
   - Amazon EC2 <br>
   - Amazon ECS <br>
   - Amazon ECR <br>
-  - Amazon ALB e Target Group <br>
   - Amazon RDS <br>
   - Amazon VPC <br>
-  - Amazon Route53 <br>
   - Docker <br>
   - Github <br>
 
