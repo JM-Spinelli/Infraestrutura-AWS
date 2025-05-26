@@ -1,4 +1,4 @@
-<h1 align="center">💻API rodando na Infraestrutura AWS🚀</h1>
+<h1 align="center">💻APP rodando na Infraestrutura AWS🚀</h1>
 <!--<div align="center">--!>
 
 <p align="center" >
@@ -37,6 +37,7 @@
 <h2> Descrição do Projeto </h2>
 
 Objetivo: Clonar o pacote da aplicação do Github para uma instância EC2, usar docker e configurá-la via rede para estar disponível para acesso via internet. </a>
+Link APP: http://34.201.101.49:3001
 
 <div>
   <h2> Tecnologias </h2>
@@ -65,7 +66,7 @@ Optei pelo acesso a EC2 via SSM, então é necessário criar uma role e nela atr
 <h2>3º Passo - Criação Security Group</h2>
 <b>Security Group - EC2</b> <br><br>
 
-Para que o acesso SSM funcione não é necessária a existencia de um security group, no entanto, para que seja possível acessar a API Bia hospedada da minha EC2, é preciso que seja configurada uma regra de entrada para o tráfego vindo de fora e é ai que o security group entra. Criada a regra de entrada por meio a porta 3001 na seção Inbound Rule. 
+Para que o acesso SSM funcione não é necessária a existencia de um security group, no entanto, para que seja possível acessar a APP Bia hospedada da minha EC2, é preciso que seja configurada uma regra de entrada para o tráfego vindo de fora e é ai que o security group entra. Criada a regra de entrada por meio a porta 3001 na seção Inbound Rule. 
 
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Security-group-Inbound.png)
 
@@ -82,21 +83,21 @@ Conectando remotamente à EC2 via SSM
 
 <h2>5º Passo - Instalando e Disponibilizando aplicação</h2>
 
-A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é a mesma utilizada para laboratórios no curso prático que estou realizando de AWS. No arquivo docker-compose.yml está toda a estrtura de funcionalidade da API, onde não só está construído a API em sí, mas também a estrutura relacional local (database local). 
+A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é a mesma utilizada para laboratórios no curso prático que estou realizando de AWS. No arquivo docker-compose.yml está toda a estrtura de funcionalidade da APP, onde não só está construído a APP em sí, mas também a estrutura relacional local (database local). 
 
-1 - Clonando API do repositório Git direto na minha EC2
+1 - Clonando APP do repositório Git direto na minha EC2
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/clonado-projeto-Api.png)
 
-2 - Antes de subir a API, estou alterando o arquivo Dockerfile com o ip da minha EC2 somada a porta de entrada (34.201.101.49:3001) e posteriormente gerando uma nova imagem Docker após a alteração. 
+2 - Antes de subir a APP, estou alterando o arquivo Dockerfile com o ip da minha EC2 somada a porta de entrada (34.201.101.49:3001) e posteriormente gerando uma nova imagem Docker após a alteração. 
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Alterando-Ip.png)
 
-3 - Subindo a API com a execução do comando docker compose up -d
+3 - Subindo a APP com a execução do comando docker compose up -d
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-no-ar.png)
 
-4 - Criado a estrutura relacional para armazenar dados da API localmente na EC2
+4 - Criado a estrutura relacional para armazenar dados da APP localmente na EC2
 ![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Estrutura-relacional-criada.png)
 
-5 - API disponível e armazenando dados localmente (http://34.201.101.49:3001)
+5 - APP disponível e armazenando dados localmente (http://34.201.101.49:3001)
 ![Meu Projeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png) 
 <br><br>
 
