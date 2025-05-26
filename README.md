@@ -36,7 +36,7 @@
 
 <h2> Descrição do Projeto </h2>
 
-Objetivo: Clonar o pacote da aplicação do Github para uma instância EC2, usar docker e configurá-la via rede para estar disponível para acesso via internet. </a><br>
+Objetivo: Clonar o pacote da APP Bia do Github para uma instância EC2, usar docker e configurá-la via rede para estar disponível para acesso via internet. </a><br>
 Link APP: http://34.201.101.49:3001
 
 <div>
