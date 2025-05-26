@@ -36,26 +36,20 @@
 
 <h2> Descrição do Projeto </h2>
 
-Objetivo: Criar uma infraestrutura altamentente resiliente e atuomatizada Utilizando o Provider Cloud AWS e nela instalar a aplicação BIA (baseada em Node.js e React), disponibilizando-a para o cliente final. </a>
+Objetivo: Clonar o pacote da aplicação do Github para um instância EC2, usar docker e configurá-la via rede para estar disponível para acesso via internet. </a>
 
 <div>
   <h2> Tecnologias </h2>
   - Amazon EC2 <br>
-  - Amazon ECS <br>
-  - Amazon ECR <br>
-  - Amazon RDS <br>
   - Amazon VPC <br>
   - Docker <br>
   - Github <br>
+</div> <a>
 
-  <h1 align="center">Infraestrutura Sem Resiliência Aplicada</h1>
-<!--<div align="center">--!>
-
-A infraestrutura disposta de tal forma que a aplicação está rodando com docker dentro de uma instância EC2, no entanto, apesar de ter duas subnets (uma em cada Zone Avaiability disntinta), em caso de qualquer falha que gere indisponibilidade para a aplicação, a mesma não terá redundância, pois ainda não está associada a um cluster com load balancer para direcionar o tráfego. <br><br>
 <h2>1º Passo - Construção da rede (VPC)</h2>
 <b> VPC-MAP </b> <br><br>
 
-Antes de provisionarmos as Instâncias, associamo-las a um cluster e demais componentes da infra, primeiro criamos a rede que irá conectar todos os elementos e permitir que a aplicação esteja disponível para internet. Na imagem, é possível ver o Resource Map da rede. Eu criei uma VPC com duas Subnets, uma em cada zona (Us-east-1a e Us-east-1b) e para acesso a internet, criei um Internet Gateway.
+Antes de provisionar a Instância, primeiro criamos a rede que irá conectar todos os elementos e permitir que a aplicação esteja disponível para internet. Na imagem, é possível ver o Resource Map da rede. Eu criei uma VPC com duas Subnets, uma em cada zona (Us-east-1a e Us-east-1b) e para acesso a internet, criei um Internet Gateway.
 <br>
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/VPC.png)
 
@@ -102,8 +96,5 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 4 - Api armazenando dados e disponível para acesso através do Ip da EC2 na porta 3001
 ![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/BIA.png)
 
-<h1 align="center">Infraestrutura Com Resiliência Aplicada</h1>
-<!--<div align="center">--!>
-Agora, por meio de serviço como ECS (Cluster), ECR (Repositorio de imagens), RDS (Serviço de Bancos na AWS), ALB e Target Group (Aplication Load Balancer) e EC2 (Maquinas da AWS), teremos uma infraestrutura resiliente para sustentae nossa API BIA.<br><br>
 
 
