@@ -36,7 +36,7 @@
 
 <h2> Descrição do Projeto </h2>
 
-Objetivo: Clonar o pacote da aplicação do Github para um instância EC2, usar docker e configurá-la via rede para estar disponível para acesso via internet. </a>
+Objetivo: Clonar o pacote da aplicação do Github para uma instância EC2, usar docker e configurá-la via rede para estar disponível para acesso via internet. </a>
 
 <div>
   <h2> Tecnologias </h2>
@@ -56,7 +56,7 @@ Antes de provisionar a Instância, primeiro criamos a rede que irá conectar tod
 <h2>2º Passo - Criação Role e User</h2>
 
 <b> Role SSM e User jm </b> <br><br>
-Optei pelo acesso a EC2 via SSM, então é necessário criar uma role e nela atribuir a Policys permitindo a que EC2 consiga se comunicar com o recurso SSM da AWS. Como estou realizando o acesso direto a minha máquina linux local, precisei tembám cirar um usuário (User jm) e gerar um par de chaves (Acess Key e Secret Key). 
+Optei pelo acesso a EC2 via SSM, então é necessário criar uma role e nela atribuir a Policys permitindo a que EC2 consiga se comunicar com o recurso SSM da AWS. Como estou realizando o acesso direto a minha máquina linux local, precisei também cirar um usuário (User jm) e gerar um par de chaves (Acess Key e Secret Key). 
 <br>
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Role-ssm.png)
 
@@ -65,7 +65,7 @@ Optei pelo acesso a EC2 via SSM, então é necessário criar uma role e nela atr
 <h2>3º Passo - Criação Security Group</h2>
 <b>Security Group - EC2</b> <br><br>
 
-Para que o acesso SSM funcione não é necessária a existencia de um security group, no entanto, para que seja possível acessar a api Bia hospedada da minha EC2, é preciso que seja configurada uma regra de entrada para o tráfego vindo de fora e é ai que o security group entra. Criada a regra de entrada por meio a porta 3001 na seção Inbound Rule. 
+Para que o acesso SSM funcione não é necessária a existencia de um security group, no entanto, para que seja possível acessar a API Bia hospedada da minha EC2, é preciso que seja configurada uma regra de entrada para o tráfego vindo de fora e é ai que o security group entra. Criada a regra de entrada por meio a porta 3001 na seção Inbound Rule. 
 
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Security-group-Inbound.png)
 
@@ -82,9 +82,9 @@ Conectando remotamente à EC2
 
 <h2>5º Passo - Instalando e Disponibilizando aplicação</h2>
 
-A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é a mesma utilizada para laboratórios no curso prático que estou realizando de AWS. No arquivo docker-compose.yml está toda a estrtura de funcionalidade da API, onde não só está construído a api em sí, mas também a estrtura relacional local (database local). 
+A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é a mesma utilizada para laboratórios no curso prático que estou realizando de AWS. No arquivo docker-compose.yml está toda a estrtura de funcionalidade da API, onde não só está construído a API em sí, mas também a estrutura relacional local (database local). 
 
-1 - Clonando api do repositório Git direto na minha EC2
+1 - Clonando API do repositório Git direto na minha EC2
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/clonado-projeto-Api.png)
 
 2 - Antes de subir a API, estou alterando o arquivo Dockerfile com o ip da minha EC2 somada a porta de entrada (34.201.101.49:3001) e posteriormente gerando uma nova imagem Docker após a alteração. 
@@ -93,13 +93,15 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 3 - Subindo a API com a execução do comando docker compose up -d
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-no-ar.png)
 
-4 - Criado a estrtura relacional para armazenar dados da API localmente na EC2
+4 - Criado a estrutura relacional para armazenar dados da API localmente na EC2
 ![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Estrutura-relacional-criada.png)
 
 5 - API disponível e armazenando dados localmente (http://34.201.101.49:3001)
 ![Meu Projeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png) 
+<br><br>
 
-Diagrama Infraestrutura AWS
+<h4>Diagrama Infraestrutura AWS</h4>
+
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/esquema-infra-aws.PNG)
 
 
