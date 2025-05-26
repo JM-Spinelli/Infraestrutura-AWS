@@ -97,17 +97,8 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 ![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Estrutura-relacional-criada.png)
 
 5 - API disponível e armazenando dados localmente 
-![http://34.201.101.49:3001](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png)
+![Meu Projeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png) http://34.201.101.49:3001
 
-
-
-
-https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Api-disponivel%20e%20persistindo%20dados.png
-
-https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Api-no-ar.png
-https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Estrutura-relacional-criada.png
-
-https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Gerando-nova-imagem-docker.png
 
 
 
