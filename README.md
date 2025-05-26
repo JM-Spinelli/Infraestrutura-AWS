@@ -99,6 +99,9 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 5 - API disponível e armazenando dados localmente (http://34.201.101.49:3001)
 ![Meu Projeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png) 
 
+Diagrama Infraestrutura AWS
+![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/esquema-infra-aws.PNG)
+
 
 
 
