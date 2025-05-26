@@ -98,3 +98,16 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 
 
 
+https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Alterando-Ip.png
+
+https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Api-disponivel%20e%20persistindo%20dados.png
+
+https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Api-no-ar.png
+https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Estrutura-relacional-criada.png
+
+https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Gerando-nova-imagem-docker.png
+
+https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/clonado-projeto-Api.png
+
+
+
