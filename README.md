@@ -77,7 +77,7 @@ Com a Rede, IAM e Securiy Group criado, temos todas as dependências necessária
 EC2 lançada e configurada na AWS
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/ec2.png)
 
-Conectando remotamente à EC2
+Conectando remotamente à EC2 via SSM
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/acesso-ssm.png)
 
 <h2>5º Passo - Instalando e Disponibilizando aplicação</h2>
