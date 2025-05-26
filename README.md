@@ -85,20 +85,22 @@ Conectando remotamente à EC2
 A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é a mesma utilizada para laboratórios no curso prático que estou realizando de AWS. No arquivo docker-compose.yml está toda a estrtura de funcionalidade da API, onde não só está construído a api em sí, mas também a estrtura relacional local (database local). 
 
 1 - Clonando api do repositório Git direto na minha EC2
-![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Clone-Projeto-Bia.png)
+![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/clonado-projeto-Api.png)
 
-2 - Parando Api e gerando nova build após alteração feita no Dockerfile
-![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Stop-Projeto-v.png)
+2 - Antes de subir a API, estou alterando o arquivo Dockerfile com o ip da minha EC2 somada a porta de entrada (34.201.101.49:3001) e posteriormente gerando uma nova imagem Docker após a alteração. 
+![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Alterando-Ip.png)
 
-3 - Rodando a Api novamente
-![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-up-novamente.png)
+3 - Subindo a API com a execução do comando docker compose up -d
+![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-no-ar.png)
 
-4 - Api armazenando dados e disponível para acesso através do Ip da EC2 na porta 3001
-![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/BIA.png)
+4 - Criado a estrtura relacional para armazenar dados da API localmente na EC2
+![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Estrutura-relacional-criada.png)
+
+5 - API disponível e armazenando dados localmente 
+![http://34.201.101.49:3001](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png)
 
 
 
-https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Alterando-Ip.png
 
 https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Api-disponivel%20e%20persistindo%20dados.png
 
@@ -106,8 +108,6 @@ https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Api-no-ar.png
 https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Estrutura-relacional-criada.png
 
 https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/Gerando-nova-imagem-docker.png
-
-https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/clonado-projeto-Api.png
 
 
 
