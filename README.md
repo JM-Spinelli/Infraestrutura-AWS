@@ -75,10 +75,10 @@ Para que o acesso SSM funcione não é necessária a existencia de um security g
 Com a Rede, IAM e Securiy Group criado, temos todas as dependências necessárias para subir a EC2 e poder acessá-la remotamente. <br>
 
 EC2 lançada e configurada na AWS
-![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/blob/main/EC2.png)
+![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/ec2.png)
 
 Conectando remotamente à EC2
-![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Acessando-ec2-diretamente.png)
+![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/acesso-ssm.png)
 
 <h2>5º Passo - Instalando e Disponibilizando aplicação</h2>
 
