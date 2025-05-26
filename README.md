@@ -96,8 +96,8 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 4 - Criado a estrtura relacional para armazenar dados da API localmente na EC2
 ![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Estrutura-relacional-criada.png)
 
-5 - API disponível e armazenando dados localmente 
-![Meu Projeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png) http://34.201.101.49:3001
+5 - API disponível e armazenando dados localmente (http://34.201.101.49:3001)
+![Meu Projeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png) 
 
 
 
