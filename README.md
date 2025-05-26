@@ -67,7 +67,6 @@ Optei pelo acesso a EC2 via SSM, então é necessário criar uma role e nela atr
 <b>Security Group - EC2</b> <br><br>
 
 Para que o acesso SSM funcione não é necessária a existencia de um security group, no entanto, para que seja possível acessar a APP Bia hospedada da minha EC2, é preciso que seja configurada uma regra de entrada para o tráfego vindo de fora e é ai que o security group entra. Criada a regra de entrada por meio a porta 3001 na seção Inbound Rule. 
-
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Security-group-Inbound.png)
 
 <h2>4º Passo - EC2 </h2>
