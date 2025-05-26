@@ -82,7 +82,7 @@ Conectando remotamente à EC2
 
 <h2>5º Passo - Instalando e Disponibilizando aplicação</h2>
 
-A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é a mesma utilizada para laboratórios no curso prático que estou realizando de AWS. 
+A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é a mesma utilizada para laboratórios no curso prático que estou realizando de AWS. No arquivo docker-compose.yml está toda a estrtura de funcionalidade da API, onde não só está construído a api em sí, mas também a estrtura relacional local (database local). 
 
 1 - Clonando api do repositório Git direto na minha EC2
 ![Meu Print](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Clone-Projeto-Bia.png)
