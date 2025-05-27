@@ -1,3 +1,3 @@
-## Nova Localização do Conteúdo
-
-O conteúdo desta seção foi movido para [**scripts/ecs**](https://github.com/henrylle/bia/tree/main/scripts/ecs).
+#### Para rodar as migrations no container ####
+```
+docker compose exec server bash -c 'npx sequelize db:migrate'
