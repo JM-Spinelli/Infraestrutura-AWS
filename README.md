@@ -37,7 +37,7 @@
 <h2> Descrição do Projeto </h2>
 
 Objetivo: Clonar o pacote da APP Bia do Github para uma instância EC2, usar docker e configurá-la via rede para estar disponível para acesso via internet. </a><br>
-Link APP: http://34.201.101.49:3001
+
 
 <div>
   <h2> Tecnologias </h2>
@@ -96,7 +96,7 @@ A aplicação que utilizarei é baseada em Node.js e React. Essa aplicação é 
 4 - Criado a estrutura relacional para armazenar dados da APP localmente na EC2
 ![Meu Porjeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Estrutura-relacional-criada.png)
 
-5 - APP disponível e armazenando dados localmente (http://34.201.101.49:3001)
+5 - APP disponível e armazenando dados localmente 
 ![Meu Projeto](https://github.com/JM-Spinelli/Minhas-Imagens/raw/main/Api-disponivel%20e%20persistindo%20dados.png) 
 <br><br>
 
